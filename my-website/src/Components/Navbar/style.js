@@ -1,18 +1,21 @@
 import styled from 'styled-components'
 
+//"#30D5C8"
 const color = {
-    highlight: "#30D5C8",
-    background: "#333333"
+    highlight: "#368DF3",
+    background: "#131313"
 };
 
 
 export const Wrapper = styled.div`
 
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
-    box-shadow: 0 4px 2px -2px rgba(0,0,0,.25);
+    height: 7.2vh;
+    box-shadow: 0 4px 2px -1px rgba(0,0,0,.25);
     width: 100vw;
+    z-index: 100;
 `
 
 export const Container = styled.nav`
@@ -21,11 +24,12 @@ export const Container = styled.nav`
     background: ${props => color.background};
     justify-content: space-between;
     align-items: center;
-    padding: 0 10vw;
+    padding: 0 20vw;
     @media (max-width: 563px) {
         justify-content: center;
     }
-    //opacity: 80%;
+    opacity: 97%;
+    z-index: 1;
 `
 export const Name = styled.h1`
     font-size: 2rem;
@@ -33,6 +37,7 @@ export const Name = styled.h1`
     margin-right: 5vw;
     margin-bottom: 1rem;
     margin-top: 1rem;
+    font-family: 'Acme';
 `
 export const NavbarContent = styled.ul`
     display: flex;
