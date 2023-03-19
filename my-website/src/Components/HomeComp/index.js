@@ -4,9 +4,9 @@ import lkdin from '../../images/linkedin.png'
 import ghub from '../../images/ghub.png'
 import profile from '../../images/profile.jpeg'
 
-const Mainpage = () => {
+const HomeComp = () => {
   return (
-    <Wrapper>
+    <Wrapper id="home">
       <Home>
         <p>
         <WelcomeMessage>João Silva</WelcomeMessage>
@@ -22,11 +22,8 @@ const Mainpage = () => {
             <GhLogo src={ghub} alt="Github Logo"/>
           </Redirect>
         </Links>
-      <About>
-        <Header>About me</Header>
-      </About>
     </Wrapper>
   )
 }
 
-export default Mainpage
+export default HomeComp

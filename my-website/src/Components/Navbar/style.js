@@ -7,7 +7,7 @@ const color = {
 };
 
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.section`
 
     position: sticky;
     top: 0;
@@ -55,10 +55,15 @@ export const Item = styled.li`
     padding-bottom: 0.4em;
     cursor: pointer;
     background: linear-gradient(${props => color.highlight}, ${props => color.highlight}) bottom / 0 0.1em no-repeat;
-    transition: 0.5s;
+    transition: all 0.5s;
     &:hover{
         background-size: 100% .15em;
         color: ${props => color.highlight};
+    }
+    .active { 
+        color: ${props => color.highlight};
+        background: linear-gradient(${props => color.highlight}, ${props => color.highlight}) bottom / 100% 0.15em no-repeat;
+        padding-bottom: 0.4em;
     }
 `
 

@@ -1,12 +1,14 @@
 import React from 'react'
-import Mainpage from '../Mainpage'
+import HomeComp from '../HomeComp'
 import Navbar from '../Navbar'
+import About from '../About'
 
 const AssembledPage = () => {
   return (
     <div>
         <Navbar/>
-        <Mainpage/>
+        <HomeComp/>
+        <About/>
     </div>
   )
 }

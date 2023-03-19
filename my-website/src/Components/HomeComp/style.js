@@ -40,9 +40,6 @@ export const UnderText = styled.div`
     font-weight: 500;
     color: ${props => color.highlight};
 `
-export const Header = styled.h1`
-    color: #eee;
-`
 
 export const About = styled.div`
     margin-top: 30vh;
