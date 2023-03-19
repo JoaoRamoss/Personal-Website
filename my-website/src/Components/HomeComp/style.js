@@ -132,3 +132,45 @@ export const StackLogo = styled.img`
         width: auto;
     }
 `
+
+export const DownloadButton = styled.button`
+
+    background-color: transparent;
+    border: 2px solid #eee;
+    border-radius: 25px;
+    width: 9vw;
+    height: 3vw;
+    cursor: pointer;
+    color: #eee;
+    font-family: 'Roboto';
+    font-size: 1vw;
+    font-weight: 500;
+    transition: 0.5s;
+    &:hover{
+        background-color: #FFFFFF;
+        color: #111215;
+    }
+
+`
+
+export const File = styled.a`
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-size: 1vw;
+    color: #eee;
+
+`
+
+export const Container = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+`
+
+export const DownloadLogo = styled.img`
+    height: 1vw;
+    width: auto;
+    margin-left: 0.5vw;
+`
