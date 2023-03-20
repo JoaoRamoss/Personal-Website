@@ -15,8 +15,8 @@ export const Wrapper = styled.section`
     position: sticky;
     top: 0;
     left: 0;
-    box-shadow: 1vw 1vw 2vw -1vw rgba(0,0,0,.15);
-    width: 100vw;
+    box-shadow: 1rem 1rem 2rem -1rem rgba(0,0,0,.15);
+    width: 100%;
     z-index: 100;
 `
 
@@ -26,8 +26,8 @@ export const Container = styled.nav`
     background: ${props => color.backgroundPrimary};
     justify-content: space-between;
     align-items: center;
-    padding: 0 20vw;
-    @media (max-width: 835px) {
+    padding: 0 10vw;
+    @media (max-width: 855px) {
         justify-content: center;
     }
     opacity: 95%;

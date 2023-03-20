@@ -6,12 +6,12 @@ import { Link } from 'react-scroll'
 
 const Navbar = () => {
 
-  const [isDesktop, setIsDesktop] = useState(window.innerWidth > 835);
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth > 855);
   const updateMedia = () => {
-    setIsDesktop(window.innerWidth > 835);
+    setIsDesktop(window.innerWidth > 855);
   }
 
-  //Check if window size is larger than threshold (563px). Doesn't render NavbarContent in case it crosses threshold
+  //Check if window size is larger than threshold (855px). Doesn't render NavbarContent in case it crosses threshold
   useEffect(() => {
     window.addEventListener("resize", updateMedia);
     return () => window.removeEventListener("resize", updateMedia); 

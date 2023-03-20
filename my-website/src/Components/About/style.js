@@ -22,10 +22,14 @@ export const Wrapper = styled.div`
 
 export const AboutSection = styled.div`
     display: flex;
-    margin: 10rem 0;
+    margin: 10rem 5rem;
     gap: 5rem;
     align-items: center;
     padding: 0;
+    @media (max-width: 1192px){
+        flex-direction: column;
+        gap: 1rem;
+    }
 `
 
 export const Text = styled.p`
@@ -42,6 +46,9 @@ export const SubTitle = styled.p`
     color: ${prop => color.primaryText};
     font-weight: 500;
     font-size: 1.1rem;
+    @media  (max-width: 1192px){
+        text-align: center;
+    }
 `
 
 export const Content = styled.p`
@@ -53,4 +60,10 @@ export const AboutImage = styled.img`
     height: 21.5rem;
     border-radius: 2rem;
     width: auto;
+    @media (max-width: 1192px){
+        height: 20rem;
+    }
+    @media (max-width: 550px){
+        height: 50vw;
+    }
 `

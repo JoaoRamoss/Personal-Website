@@ -2,6 +2,8 @@ import React from 'react'
 import { Wrapper, Home, UnderText, WelcomeMessage, Redirect, LiLogo
   , Links, GhLogo, ProfilePic, Stack, StackItems, StackText, Separator, StackLogo, DownloadButton, 
   File, Container, Wave, Display } from './style.js'
+import { useState, useEffect } from 'react'
+
 import lkdin from '../../images/linkedin.png'
 import ghub from '../../images/ghub.png'
 import profile from '../../images/profile.jpeg'
@@ -15,24 +17,38 @@ import resume from '../../images/Joao_Silva.pdf'
 import wave from '../../images/wave.png'
 
 const HomeComp = () => {
+
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth > 855);
+  const updateMedia = () => {
+    setIsDesktop(window.innerWidth > 855);
+  }
+
+    //Check if window size is larger than threshold (855px). Doesn't render NavbarContent in case it crosses threshold
+    useEffect(() => {
+      window.addEventListener("resize", updateMedia);
+      return () => window.removeEventListener("resize", updateMedia); 
+    }, [isDesktop]);
+
   return (
     <Wrapper id="home">
       <Home>
-        <p>
-        <WelcomeMessage>Hi<Wave src={wave}/><br/> I'm João</WelcomeMessage>
-        <UnderText>Software Engineering Student at Universidade do Minho <br/>based in Fafe, Portugal 📍</UnderText>
-        <Links>
-        <Redirect href="https://www.linkedin.com/in/joaosilva05/" target="_blank" rel="noreferrer">
-          <LiLogo src={lkdin} alt="LinkedIn Logo"/>
-        </Redirect>
-        <Redirect href="https://github.com/joaoramoss" target="_blank" rel="noreferrer">
-          <GhLogo src={ghub} alt="Github Logo"/>
-        </Redirect>
-      </Links>
-        </p>
+        <div>
+          <WelcomeMessage>Hi<Wave src={wave}/><br/> I'm João</WelcomeMessage>
+          <UnderText>Software Engineering Student at Universidade do Minho <br/>based in Fafe, Portugal 📍</UnderText>
+          <Links>
+            <Redirect href="https://www.linkedin.com/in/joaosilva05/" target="_blank" rel="noreferrer">
+              <LiLogo src={lkdin} alt="LinkedIn Logo"/>
+            </Redirect>
+            <Redirect href="https://github.com/joaoramoss" target="_blank" rel="noreferrer">
+              <GhLogo src={ghub} alt="Github Logo"/>
+            </Redirect>
+          </Links>
+        </div>
         <Container>
           <ProfilePic src={profile} alt="Profile picture"/>
+          { isDesktop &&
           <File href={resume} download="Joao-Silva"><DownloadButton>Download CV</DownloadButton></File>
+          }
         </Container>
       </Home>
       <Stack>
@@ -47,7 +63,6 @@ const HomeComp = () => {
           <Display><StackLogo className="c" src={c} alt="C logo"/></Display>
         </StackItems>
       </Stack>
-      
     </Wrapper>
   )
 }
