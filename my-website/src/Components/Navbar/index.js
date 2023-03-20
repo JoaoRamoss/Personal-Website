@@ -15,7 +15,7 @@ const Navbar = () => {
   useEffect(() => {
     window.addEventListener("resize", updateMedia);
     return () => window.removeEventListener("resize", updateMedia); 
-  })
+  }, [isDesktop]);
 
 
   return (
@@ -25,10 +25,10 @@ const Navbar = () => {
             {isDesktop && (
             <NavbarContent>
                 <Item><Link to="home"  spy={true} smooth={true} 
-                            activeClass = "active" offset={-170} duration={500}>Home</Link></Item>
+                            isDynamic={true} offset={-170} duration={500}>Home</Link></Item>
                 <Item><Link to="about" spy={true} smooth={true} 
-                            activeClass="active" offset={-120} duration={500}>About</Link></Item>
-                <Item><Link to="contact" spy={true} smooth={true} activeClass="active" offset={50} duration={500}>Contact me</Link></Item>
+                            isDynamic={true} offset={-70} duration={500}>About</Link></Item>
+                <Item><Link to="contact" spy={true} smooth={true} offset={50} duration={500}>Contact me</Link></Item>
             </NavbarContent>
             )}
         </Container>

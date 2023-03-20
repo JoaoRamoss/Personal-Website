@@ -1,25 +1,23 @@
 import React from 'react'
-import { Wrapper, AboutSection, SectionTitle, Content } from './style'
+import { Wrapper, AboutSection, SectionTitle, Content, AboutPage, AboutImage, SubTitle, Text } from './style'
+import aboutImage from '../../images/laptop.jpeg'
 
 const About = () => {
   return (
-    <Wrapper id="about">
-      <AboutSection>
-        <SectionTitle>About me</SectionTitle>
-        <Content>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sapien nulla, maximus in pellentesque eget, tempor quis nunc. Quisque ac condimentum lacus. Praesent vitae nisl est. Fusce a lacus et velit hendrerit tincidunt sed non nisl. Fusce tincidunt faucibus ante, quis faucibus neque accumsan vitae. Nulla cursus imperdiet sem. Vivamus id ornare erat.
-Aliquam auctor tellus sed aliquam congue. Sed consectetur viverra ultricies. Pellentesque lacinia ac risus id eleifend. Aliquam erat volutpat. Etiam congue quam nunc, ut porttitor felis venenatis vitae. Nullam eget gravida ante. Fusce ultricies orci elementum, pulvinar eros id, ullamcorper augue. Phasellus rutrum, nibh id varius facilisis.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sapien nulla, maximus in pellentesque eget, tempor quis nunc. Quisque ac condimentum lacus. Praesent vitae nisl est. Fusce a lacus et velit hendrerit tincidunt sed non nisl. Fusce tincidunt faucibus ante, quis faucibus neque accumsan vitae. Nulla cursus imperdiet sem. Vivamus id ornare erat.
-Aliquam auctor tellus sed aliquam congue. Sed consectetur viverra ultricies. Pellentesque lacinia ac risus id eleifend. Aliquam erat volutpat. Etiam congue quam nunc, ut porttitor felis venenatis vitae. Nullam eget gravida ante. Fusce ultricies orci elementum, pulvinar eros id, ullamcorper augue. Phasellus rutrum, nibh id varius facilisis.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sapien nulla, maximus in pellentesque eget, tempor quis nunc. Quisque ac condimentum lacus. Praesent vitae nisl est. Fusce a lacus et velit hendrerit tincidunt sed non nisl. Fusce tincidunt faucibus ante, quis faucibus neque accumsan vitae. Nulla cursus imperdiet sem. Vivamus id ornare erat.
-Aliquam auctor tellus sed aliquam congue. Sed consectetur viverra ultricies. Pellentesque lacinia ac risus id eleifend. Aliquam erat volutpat. Etiam congue quam nunc, ut porttitor felis venenatis vitae. Nullam eget gravida ante. Fusce ultricies orci elementum, pulvinar eros id, ullamcorper augue. Phasellus rutrum, nibh id varius facilisis.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sapien nulla, maximus in pellentesque eget, tempor quis nunc. Quisque ac condimentum lacus. Praesent vitae nisl est. Fusce a lacus et velit hendrerit tincidunt sed non nisl. Fusce tincidunt faucibus ante, quis faucibus neque accumsan vitae. Nulla cursus imperdiet sem. Vivamus id ornare erat.
-Aliquam auctor tellus sed aliquam congue. Sed consectetur viverra ultricies. Pellentesque lacinia ac risus id eleifend. Aliquam erat volutpat. Etiam congue quam nunc, ut porttitor felis venenatis vitae. Nullam eget gravida ante. Fusce ultricies orci elementum, pulvinar eros id, ullamcorper augue. Phasellus rutrum, nibh id varius facilisis.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sapien nulla, maximus in pellentesque eget, tempor quis nunc. Quisque ac condimentum lacus. Praesent vitae nisl est. Fusce a lacus et velit hendrerit tincidunt sed non nisl. Fusce tincidunt faucibus ante, quis faucibus neque accumsan vitae. Nulla cursus imperdiet sem. Vivamus id ornare erat.
-Aliquam auctor tellus sed aliquam congue. Sed consectetur viverra ultricies. Pellentesque lacinia ac risus id eleifend. Aliquam erat volutpat. Etiam congue quam nunc, ut porttitor felis venenatis vitae. Nullam eget gravida ante. Fusce ultricies orci elementum, pulvinar eros id, ullamcorper augue. Phasellus rutrum, nibh id varius facilisis.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sapien nulla, maximus in pellentesque eget, tempor quis nunc. Quisque ac condimentum lacus. Praesent vitae nisl est. Fusce a lacus et velit hendrerit tincidunt sed non nisl. Fusce tincidunt faucibus ante, quis faucibus neque accumsan vitae. Nulla cursus imperdiet sem. Vivamus id ornare erat.
-Aliquam auctor tellus sed aliquam congue. Sed consectetur viverra ultricies. Pellentesque lacinia ac risus id eleifend. Aliquam erat volutpat. Etiam congue quam nunc, ut porttitor felis venenatis vitae. Nullam eget gravida ante. Fusce ultricies orci elementum, pulvinar eros id, ullamcorper augue. Phasellus rutrum, nibh id varius facilisis.</Content>
-      </AboutSection>
-    </Wrapper>
+    <AboutPage id="about">
+      <Wrapper>
+        <AboutSection>
+          <AboutImage src={aboutImage}/>
+          <Text>
+            <SectionTitle>About me</SectionTitle>
+            <SubTitle>Software Engineering Student at Universidade do Minho <br/>based in Fafe, Portugal 📍</SubTitle>
+            <Content>
+            As a software engineering student, I am passionate about using technology to solve real-world problems and create innovative solutions. I am constantly seeking new challenges and opportunities to expand my skills and knowledge in the field.<br/> Outside of the classroom, I enjoy spending time with my friends and family, and explore new programming tools and frameworks.<br/> I'm excited about the opportunities that lie ahead, and I look forward to making a meaningful contribution to the industry.
+            </Content>
+          </Text>
+        </AboutSection>
+      </Wrapper>
+    </AboutPage>
   )
 }
 
