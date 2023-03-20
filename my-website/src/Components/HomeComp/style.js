@@ -50,6 +50,9 @@ export const WelcomeMessage = styled.h1`
     color: ${prop => color.primaryText};
     font-size: 5rem;
     display: inline;
+    @media (max-width: 455px){
+        font-size: 4rem;
+    }
 `
 
 export const UnderText = styled.p`
@@ -57,6 +60,9 @@ export const UnderText = styled.p`
     margin: 0;
     font-weight: 500;
     color: ${prop => color.secondaryText};
+    @media (max-width: 455px){
+        font-size: .8rem;
+    }
 `
 
 export const Redirect = styled.a`

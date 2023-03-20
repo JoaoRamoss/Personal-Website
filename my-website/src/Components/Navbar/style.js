@@ -27,9 +27,6 @@ export const Container = styled.nav`
     justify-content: space-between;
     align-items: center;
     padding: 0 10vw;
-    @media (max-width: 855px) {
-        justify-content: center;
-    }
     opacity: 95%;
     z-index: 1;
 `
@@ -46,6 +43,19 @@ export const NavbarContent = styled.ul`
     flex-direction: row;
     list-style-type: none;
     gap: 2vw;
+    @media (max-width: 855px){
+        flex-direction: column;
+        background-color: ${prop => color.backgroundPrimary};
+        flex-wrap: nowrap;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 100vw;
+        padding-top: 3.5rem;
+        margin-top: 0;
+        gap: 3rem;
+    }
 `
 
 export const Item = styled.li`
