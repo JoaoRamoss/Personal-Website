@@ -1,6 +1,6 @@
 
 import './App.css';
-import AssembledPage from './Components/AssembledPage';
+import AssembledPage from './Pages';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 

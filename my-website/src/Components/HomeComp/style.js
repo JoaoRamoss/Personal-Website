@@ -178,6 +178,7 @@ export const DownloadButton = styled.button`
     color: ${prop => color.primaryText};
     font-size: .8rem;
     font-weight: 500;
+    font-family: 'Poppins';
     transition-property: background-color, color;
     transition-duration: 0.5s;
     &:hover{

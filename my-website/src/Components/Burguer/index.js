@@ -2,7 +2,6 @@ import React from 'react'
 import { useState } from 'react'
 import { BurguerButton, CloseButton,  NavbarContent, Item } from './style.js'
 import { Link } from 'react-scroll'
-import { Transition } from 'react-transition-group'
 
 const Burguer = () => {
 
