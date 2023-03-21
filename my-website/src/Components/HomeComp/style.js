@@ -206,6 +206,10 @@ export const Wave = styled.img`
     height: 5rem;
     width: auto;
     margin-left: 1.5rem;
+    @media (max-width: 455px){
+        height: 3.8rem;
+        margin-left: 1.3rem;
+    }
 `
 
 
