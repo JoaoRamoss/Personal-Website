@@ -17,7 +17,8 @@ import resume from '../../images/Joao_Silva.pdf'
 import wave from '../../images/wave.png'
 
 const HomeComp = () => {
-
+  // I don't want to enable downloadable CV yet.
+  const renderCV = false;
   const [isDesktop, setIsDesktop] = useState(window.innerWidth > 855);
   const updateMedia = () => {
     setIsDesktop(window.innerWidth > 855);
@@ -46,7 +47,7 @@ const HomeComp = () => {
         </div>
         <Container>
           <ProfilePic src={profile} alt="Profile picture"/>
-          { isDesktop &&
+          { isDesktop && renderCV &&
           <File href={resume} download="Joao-Silva"><DownloadButton>Download CV</DownloadButton></File>
           }
         </Container>

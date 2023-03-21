@@ -24,14 +24,16 @@ export const FormBox = styled.form`
     gap: 2rem;
     justify-content: flex-start;
     border: .07rem solid ${prop => color.primaryText};
-    height: 22rem;
+    height: 25rem;
     width: 35rem;
-    padding: 3rem;
+    padding: 3vw;
     background-color: ${prop => color.backgroundPrimary};
     border-radius: 2rem;
     box-shadow: 0 0 1.5rem -.7rem ${prop => color.primaryText};
     @media (max-width: 700px) {
         width: 60vw;
+        padding: 4vw;
+        height: 22rem;
     }
 `
 
@@ -45,7 +47,7 @@ export const NameBox = styled.input`
     border: 0.08rem solid ${prop => color.primaryText};
     border-radius: .3rem;
     text-align: center;
-    height: 2rem;
+    height: 2.3rem;
     width: 100%;
     font-size: 1.1rem;
     font-family: 'Poppins';
@@ -54,13 +56,16 @@ export const NameBox = styled.input`
     &:focus{
         outline: 2px solid ${prop => color.highlight}; 
     }
+    @media (max-width: 700px) {
+        font-size: .8rem;
+    }
 `
 
 export const EmailBox = styled.input`
     border: 0.08rem solid ${prop => color.primaryText};
     border-radius: .3rem;
     text-align: center;
-    height: 2rem;
+    height: 2.3rem;
     width: 100%;
     font-size: 1.1rem;
     font-family: 'Poppins';
@@ -68,6 +73,9 @@ export const EmailBox = styled.input`
     background-color: ${prop=> color.backgroundSecondary};
     &:focus{
         outline: 2px solid ${prop => color.highlight}; 
+    }
+    @media (max-width: 700px) {
+        font-size: .8rem;
     }
 `
 
@@ -76,7 +84,7 @@ export const SubjectBox = styled.input`
     margin-left: 0;
     margin-right: 0;
     border-radius: .3rem;
-    height: 2rem;
+    height: 3rem;
     padding: 0;
     width: 100%;
     font-size: 1.1rem;
@@ -86,6 +94,9 @@ export const SubjectBox = styled.input`
     background-color: ${prop=> color.backgroundSecondary};
     &:focus{
         outline: 2px solid ${prop => color.highlight}; 
+    }
+    @media (max-width: 700px) {
+        font-size: .8rem;
     }
 `
 export const ContactTitle = styled.div`
@@ -99,7 +110,7 @@ export const ContactTitle = styled.div`
 `
 
 export const TextArea = styled.textarea`
-    height: 7rem;
+    height: 9rem;
     padding: 0.5rem 1rem;
 
     border: 0.08rem solid ${prop => color.primaryText};
@@ -113,6 +124,9 @@ export const TextArea = styled.textarea`
     background-color: ${prop=> color.backgroundSecondary};
     &:focus{
         outline: 2px solid ${prop => color.highlight}; 
+    }
+    @media (max-width: 700px) {
+        font-size: .8rem;
     }
 `
 
@@ -128,6 +142,11 @@ export const Submit = styled.button`
     color: ${prop => color.backgroundPrimary};
     font-size: 1.2rem;
     font-weight: 500;
+    @media (max-width: 700px) {
+        font-size: 1rem;
+        width: 6rem;
+        height: 2rem;
+    }
 `
 
 export const Container = styled.div`
