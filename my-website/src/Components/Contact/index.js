@@ -1,7 +1,7 @@
 import React from 'react'
 import { Wrapper, FormBox, PersonalInfoContainer, NameBox, EmailBox, SubjectBox, ContactTitle,
          TextArea, Submit, Alternative, Container, EmailSug, EmailLogo, Display, EmailShowcase,
-          AlternativeContainer, CopyWarning, Subtitle, Point } from './style.js'
+          AlternativeContainer, CopyWarning, Subtitle, Point, Confirm } from './style.js'
 import emailjs from '@emailjs/browser'
 import { useState } from 'react'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
@@ -16,6 +16,11 @@ const Contact = () => {
     const timer = setTimeout(() => setCopied(false), 2000);
     return () => clearTimeout(timer);
   }, [copied]);
+
+  useEffect(() => {
+    const timer = setTimeout(() => showResult(false), 2000);
+    return () => clearTimeout(timer);
+  }, [result]);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -42,7 +47,9 @@ const Contact = () => {
           </PersonalInfoContainer>
           <SubjectBox required type="text" htmlFor="Subject" placeholder='Subject' name="subject"/>
           <TextArea required className='message' type="text" htmlFor="Message" placeholder='Message' name="message"/>
+          { result ? <Confirm/> :
           <Submit type="submit">Send</Submit>
+          }
         </FormBox>
         <AlternativeContainer>
           <Alternative>Alternatively, you can reach me via Email:</Alternative>
@@ -54,6 +61,7 @@ const Contact = () => {
           </EmailShowcase>
           {copied && <CopyWarning>Copied to clipboard</CopyWarning>}
         </AlternativeContainer>
+
       </Container>
     </Wrapper>
   )

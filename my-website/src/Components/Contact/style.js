@@ -1,6 +1,10 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import { FaEnvelopeOpenText } from 'react-icons/fa'
+import { fadeInUp } from 'react-animations'
+import {  IoCheckmarkCircleOutline } from 'react-icons/io5'
 
+
+const renderConfirmation = keyframes`${fadeInUp}`
 const color = {
     highlight: "#368DF3",
     backgroundPrimary: "#FFFFFF",
@@ -35,6 +39,11 @@ export const FormBox = styled.form`
         padding: 4vw;
         height: 22rem;
     }
+    @media (max-width: 450px) {
+        padding: 7vw;
+        gap: 1rem;
+        padding-bottom: 1vw;
+    }
 `
 
 export const PersonalInfoContainer = styled.div`
@@ -59,6 +68,9 @@ export const NameBox = styled.input`
     @media (max-width: 700px) {
         font-size: .8rem;
     }
+    @media (max-width: 450px) {
+        height: 2rem;
+    }
 `
 
 export const EmailBox = styled.input`
@@ -76,6 +88,9 @@ export const EmailBox = styled.input`
     }
     @media (max-width: 700px) {
         font-size: .8rem;
+    }
+    @media (max-width: 450px) {
+        height: 2rem;
     }
 `
 
@@ -97,6 +112,9 @@ export const SubjectBox = styled.input`
     }
     @media (max-width: 700px) {
         font-size: .8rem;
+    }
+    @media (max-width: 450px) {
+        height: 2.3rem;
     }
 `
 export const ContactTitle = styled.div`
@@ -128,6 +146,9 @@ export const TextArea = styled.textarea`
     @media (max-width: 700px) {
         font-size: .8rem;
     }
+    @media (max-width: 450px) {
+        width: 87%;
+    }
 `
 
 export const Submit = styled.button`
@@ -147,6 +168,10 @@ export const Submit = styled.button`
         width: 6rem;
         height: 2rem;
     }
+    @media (max-width: 450px) {
+        margin-top: .5rem;
+    }
+    animation: .5s ${renderConfirmation};
 `
 
 export const Container = styled.div`
@@ -237,5 +262,20 @@ export const Point = styled.img`
     height: 2.1rem;
     @media (max-width: 660px) {
         height: 1.5rem;
+    }
+`
+
+export const Confirm = styled(IoCheckmarkCircleOutline)`
+    margin-top: 1.4rem;
+    color: ${prop => color.highlight};
+    scale: 4;
+    animation: .5s ${renderConfirmation};
+    align-self: center;
+    @media (max-width: 700px) {
+        margin-top: .3rem;
+        scale: 3;
+    }
+    @media (max-width: 450px) {
+        margin-top: 1.5rem;
     }
 `
