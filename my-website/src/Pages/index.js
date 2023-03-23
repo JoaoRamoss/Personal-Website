@@ -4,7 +4,7 @@ import Navbar from '../Components/Navbar'
 import About from '../Components/About'
 import Contact from '../Components/Contact'
 
-const AssembledPage = () => {
+const MainPage = () => {
   return (
     <div>
         <Navbar/>
@@ -15,4 +15,4 @@ const AssembledPage = () => {
   )
 }
 
-export default AssembledPage
+export default MainPage
