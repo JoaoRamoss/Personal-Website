@@ -20,7 +20,7 @@ import wave from '../../images/wave.png'
 
 const HomeComp = () => {
   // I don't want to enable downloadable CV yet.
-  const renderCV = false;
+  const renderCV = false; //When set to {true} -> Renders button that downloads my CV when pressed.
   const [isDesktop, setIsDesktop] = useState(window.innerWidth > 855);
   const updateMedia = () => {
     setIsDesktop(window.innerWidth > 855);
