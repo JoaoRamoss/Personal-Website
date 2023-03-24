@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 const color = {
     highlight: "#368DF3",
     backgroundPrimary: "#FFFFFF",

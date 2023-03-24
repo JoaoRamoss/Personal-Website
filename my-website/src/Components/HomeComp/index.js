@@ -3,7 +3,9 @@ import { Wrapper, Home, UnderText, WelcomeMessage, Redirect, LiLogo
   , Links, GhLogo, ProfilePic, Stack, StackItems, StackText, Separator, StackLogo, DownloadButton, 
   File, Container, Wave, Display } from './style.js'
 import { useState, useEffect } from 'react'
+import { Tooltip } from 'react-tooltip'
 
+import 'react-tooltip/dist/react-tooltip.css'
 import lkdin from '../../images/linkedin.png'
 import ghub from '../../images/ghub.png'
 import profile from '../../images/profile.jpeg'
@@ -56,12 +58,26 @@ const HomeComp = () => {
         <StackText>Tech Stack</StackText>
         <Separator/>
         <StackItems>
-          <Display><StackLogo className="react" src={react} alt="react logo"/></Display>
-          <Display><StackLogo className="js" src={js} alt="JavaScript logo"/></Display>
-          <Display><StackLogo className="java" src={java} alt="Java logo"/></Display>
-          <Display><StackLogo className="python" src={python} alt="Python logo"/></Display>
-          <Display><StackLogo className="mysql" src={mysql} alt="MySQL logo"/></Display>
-          <Display><StackLogo className="c" src={c} alt="C logo"/></Display>
+          <Tooltip id="my-tooltip"/>
+          <Display><StackLogo data-tooltip-id="my-tooltip" 
+                              data-tooltip-content="React" 
+                              data-tooltip-place="bottom" className="react" src={react} alt="react logo"/></Display>
+          <Display><StackLogo data-tooltip-id="my-tooltip" 
+                              data-tooltip-content="JavaScript" 
+                              data-tooltip-place="bottom" className="js" src={js} alt="JavaScript logo"/></Display>
+          <Display><StackLogo data-tooltip-id="my-tooltip" 
+                              data-tooltip-content="Java" 
+                              data-tooltip-place="bottom" className="java" src={java} alt="Java logo"/></Display>
+          <Display><StackLogo data-tooltip-id="my-tooltip" 
+                              data-tooltip-content="Python" 
+                              data-tooltip-place="bottom" className="python" src={python} alt="Python logo"/></Display>
+          <Display><StackLogo data-tooltip-id="my-tooltip" 
+                              data-tooltip-content="MySQL" 
+                              data-tooltip-place="bottom" className="mysql" src={mysql} alt="MySQL logo"/></Display>
+          <Display><StackLogo data-tooltip-id="my-tooltip" 
+                              data-tooltip-content="C" 
+                              data-tooltip-place="bottom"
+                              className="c" src={c} alt="C logo"/></Display>
         </StackItems>
       </Stack>
     </Wrapper>
