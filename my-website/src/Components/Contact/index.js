@@ -38,7 +38,7 @@ const Contact = () => {
   return (
     <Wrapper id='contact'>
       <ContactTitle>Contact me</ContactTitle>
-      <Subtitle>Dont be shy! Get in touch <Point src={pointDown}/></Subtitle>
+      <Subtitle>Don't be shy! Get in touch <Point src={pointDown}/></Subtitle>
       <Container>
         <FormBox onSubmit={sendEmail}>
           <PersonalInfoContainer>

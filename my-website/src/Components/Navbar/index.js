@@ -28,6 +28,8 @@ const Navbar = () => {
                             isDynamic={true} offset={-170} duration={500}>Home</Link></Item>
                 <Item><Link to="about" spy={true} smooth={true} 
                             isDynamic={true} offset={-70} duration={500}>About</Link></Item>
+                <Item><Link to="portoflio" spy={true} smooth={true} 
+                            isDynamic={true} offset={-70} duration={500}>Portfolio</Link></Item>
                 <Item><Link isDynamic={true} to="contact" spy={true} smooth={true} offset={-170} duration={500}>Contact me</Link></Item>
             </NavbarContent>
             ):

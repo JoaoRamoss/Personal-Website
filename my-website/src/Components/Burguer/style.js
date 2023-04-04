@@ -71,7 +71,7 @@ export const NavbarContent = styled.ul`
     right: 0;
     height: 100vh;
     width: 100vw;
-    padding-top: 3.5rem;
+    padding-top: 0;
     margin-top: 0;
     gap: 3rem;
     transform: translateX(0%);
