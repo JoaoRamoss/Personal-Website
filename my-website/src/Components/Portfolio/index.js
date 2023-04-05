@@ -42,7 +42,7 @@ const Portfolio = () => {
               <Tech>CSS</Tech>
             </Tools>
             <Actions>
-              <Code href="https://github.com/JoaoRamoss/trabalho-ASCN" target="_blank">Code <GhLogo src={ghlogo}/></Code>
+              <Code href="https://github.com/JoaoRamoss/Etch-a-sketch" target="_blank">Code <GhLogo src={ghlogo}/></Code>
               <Live href="https://etch-a-sketch-ramux.netlify.app/" target="_blank"> Live Demo <LiveLogo/></Live>
             </Actions>
           </Info>
