@@ -19,7 +19,8 @@ export const Wrapper = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 7rem 3rem;
+    padding: 5rem 3rem;
+    background-color: ${color.backgroundPrimary};
 `
 
 export const FormBox = styled.form`

@@ -17,6 +17,8 @@ const Burguer = () => {
                             isDynamic={true} offset={-170} duration={500}>Home</Link></Item>
                 <Item><Link onClick={()=>{setOpen(!open)}} to="about" spy={true} smooth={true} 
                             isDynamic={true} offset={-70} duration={500}>About</Link></Item>
+                <Item><Link to="portfolio" spy={true} smooth={true} 
+                            isDynamic={true} offset={-70} duration={500}>Portfolio</Link></Item>
                 <Item><Link onClick={()=>{setOpen(!open)}} to="contact" spy={true} smooth={true} 
                             isDynamic={true} offset={50} duration={500}>Contact me</Link></Item>
         </NavbarContent>
@@ -30,6 +32,8 @@ const Burguer = () => {
                             isDynamic={true} offset={-170} duration={500}>Home</Link></Item>
                 <Item><Link onClick={()=>{setOpen(!open)}} to="about" spy={true} smooth={true} 
                             isDynamic={true} offset={-70} duration={500}>About</Link></Item>
+                <Item><Link onClick={()=>{setOpen(!open)}} to="portfolio" spy={true} smooth={true} 
+                            isDynamic={true} offset={-70} duration={500}>Portfolio</Link></Item>
                 <Item><Link onClick={()=>{setOpen(!open)}} to="contact" spy={true} smooth={true} 
                             isDynamic={true} offset={50} duration={500}>Contact me</Link></Item>
         </NavbarContent>
