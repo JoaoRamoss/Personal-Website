@@ -62,12 +62,12 @@ export const Item = styled.li`
     font-size: 1.1rem;
     text-align: center;
     color: #2D2E32;
-    padding-bottom: 0.3vw;
+    padding-bottom: 0.2rem;
     cursor: pointer;
-    background: linear-gradient(${props => color.highlight}, ${props => color.highlight}) bottom / 0 0.1vh no-repeat;
+    background: linear-gradient(${props => color.highlight}, ${props => color.highlight}) bottom / 0 0.1rem no-repeat;
     transition: all 0.5s;
     &:hover{
-        background-size: 100% .25vh;
+        background-size: 100% .13rem;
         color: ${props => color.highlight};
     }
 `

@@ -4,6 +4,7 @@ import Navbar from '../Components/Navbar'
 import About from '../Components/About'
 import Contact from '../Components/Contact'
 import Portfolio from '../Components/Portfolio'
+import Footer from '../Components/Footer'
 
 const MainPage = () => {
   return (
@@ -13,6 +14,7 @@ const MainPage = () => {
         <About/>
         <Portfolio/>
         <Contact/>
+        <Footer/>
     </div>
   )
 }
