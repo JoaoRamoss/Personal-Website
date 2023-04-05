@@ -5,6 +5,7 @@ import { Wrapper, Title, SubTitle, Content, Box, Image, Info, BoxTitle, Desc, Qu
 import ghost from '../../images/ghost.png'
 import ghlogo from '../../images/ghub.png'
 import eas from '../../images/eas.png'
+import fms from '../../images/fms.png'
 
 const Portfolio = () => {
   return (
@@ -43,6 +44,21 @@ const Portfolio = () => {
             <Actions>
               <Code href="https://github.com/JoaoRamoss/trabalho-ASCN" target="_blank">Code <GhLogo src={ghlogo}/></Code>
               <Live href="https://etch-a-sketch-ramux.netlify.app/" target="_blank"> Live Demo <LiveLogo/></Live>
+            </Actions>
+          </Info>
+        </Box>
+
+        <Box>
+          <Image src={fms}/>
+          <Info>
+            <BoxTitle>Football matches simulator</BoxTitle>
+            <Desc>Project developed during the Object-Oriented Programming class. The program reads information 
+              about all the teams and players from a provided CSV file and simulates matches between them.</Desc>
+            <Tools>
+              <Tech>Java</Tech>
+            </Tools>
+            <Actions>
+              <Code href="https://github.com/JoaoRamoss/ProjetoPOO" target="_blank">Code <GhLogo src={ghlogo}/></Code>
             </Actions>
           </Info>
         </Box>
