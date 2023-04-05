@@ -6,6 +6,7 @@ import ghost from '../../images/ghost.png'
 import ghlogo from '../../images/ghub.png'
 import eas from '../../images/eas.png'
 import fms from '../../images/fms.png'
+import login from '../../images/Login.png'
 
 const Portfolio = () => {
   return (
@@ -15,7 +16,26 @@ const Portfolio = () => {
         <SubTitle>"The only way to do great work is to love what you do" <Quote>- Steve Jobs</Quote></SubTitle>
       </TitleSet>
       <Content>
-        <Box>
+
+      <Box>
+          <Image src={login}/>
+          <Info>
+            <BoxTitle>RasBet</BoxTitle>
+            <Desc>RasBet is a website that alows it's users to place bets on football matches. 
+              Each user is able to deposit/withdraw fictional money from their account.
+            </Desc>
+            <Tools>
+              <Tech>React</Tech>
+              <Tech>Python</Tech>
+              <Tech>Flask</Tech>
+            </Tools>
+            <Actions>
+              <Code href="https://github.com/JoaoRamoss/RasBet" target="_blank">Code <GhLogo src={ghlogo}/></Code>
+            </Actions>
+          </Info>
+        </Box>
+
+        <Box className="reverse">
           <Image src={ghost}/>
           <Info>
             <BoxTitle>Ghost</BoxTitle>
@@ -31,7 +51,7 @@ const Portfolio = () => {
           </Info>
         </Box>
 
-        <Box className="reverse">
+        <Box>
           <Image src={eas}/>
           <Info>
             <BoxTitle>Etch-a-sketch</BoxTitle>
@@ -48,7 +68,7 @@ const Portfolio = () => {
           </Info>
         </Box>
 
-        <Box>
+        <Box className="reverse">
           <Image src={fms}/>
           <Info>
             <BoxTitle>Football matches simulator</BoxTitle>
