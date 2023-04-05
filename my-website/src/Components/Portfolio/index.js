@@ -22,7 +22,8 @@ const Portfolio = () => {
           <Info>
             <BoxTitle>RasBet</BoxTitle>
             <Desc>RasBet is a website that alows it's users to place bets on football matches. 
-              Each user is able to deposit/withdraw fictional money from their account.
+              Each user is able to deposit/withdraw fictional money from their account. This website was an assignment for a class and it was developed 
+              in collaboration with 3 colleagues.
             </Desc>
             <Tools>
               <Tech>React</Tech>
