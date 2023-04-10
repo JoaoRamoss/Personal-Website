@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { Wrapper, Container, Name, NavbarContent, Item } from './style.js'
 import { useState } from 'react'
 import { Link } from 'react-scroll'
-import Burguer from '../Burguer/index.js'
+import Burger from '../Burger/index.js'
 
 
 const Navbar = () => {
@@ -33,7 +33,7 @@ const Navbar = () => {
                 <Item><Link isDynamic={true} to="contact" spy={true} smooth={true} offset={-170} duration={500}>Contact me</Link></Item>
             </NavbarContent>
             ):
-            <Burguer/>
+            <Burger/>
             }
         </Container>
     </Wrapper>

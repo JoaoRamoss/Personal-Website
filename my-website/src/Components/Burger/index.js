@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { BurguerButton, CloseButton,  NavbarContent, Item } from './style.js'
 import { Link } from 'react-scroll'
 
-const Burguer = () => {
+const Burger = () => {
 
     const [open, setOpen] = useState(false);
 
@@ -42,4 +42,4 @@ const Burguer = () => {
   )
 }
 
-export default Burguer
+export default Burger

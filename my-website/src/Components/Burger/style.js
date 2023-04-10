@@ -21,15 +21,15 @@ export const BurguerButton = styled(FaBars)`
     &:hover{
         color: ${prop => color.highlight};
     }
-    @keyframes slideInFromLeft {
+    @keyframes slideInFromLeftOnClose {
         0% {
-            transform: rotate(-90deg);
+            transform: rotate(90deg);
         }
         100% {
-            transform: rotate(0);
+            transform: rotate(0deg);
         }
     }
-    animation: .3s ease-in-out 0s 1 slideInFromLeft;
+    animation: .3s ease-in-out 0s 1 slideInFromLeftOnClose;
 `
 
 export const CloseButton = styled(CgClose)`
