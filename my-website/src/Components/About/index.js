@@ -12,7 +12,10 @@ const About = () => {
             <SectionTitle>About me</SectionTitle>
             <SubTitle>Software Engineering Student at Universidade do Minho <br/>based in Fafe, Portugal 📍</SubTitle>
             <Content>
-            As a software engineering student, I am passionate about using technology to solve real-world problems and create innovative solutions. I am constantly seeking new challenges and opportunities to expand my skills and knowledge in the field.<br/> Outside of the classroom, I enjoy spending time with my friends and family, and exploring new programming tools and frameworks.<br/> I'm excited about the opportunities that lie ahead, and I look forward to making a meaningful contribution to the industry.
+            I graduated in Software Engineering at Universidade do Minho, where I learned important concepts such as software development, 
+            data structures and algorithms, amongst other fundamentals. I'm also currently a Master's degree student in the same field, 
+            where I'm exploring the topics of Software Development, Validation and Maintenance, and Graphical Computing.<br/>
+            I enjoy being challenged and often seek opportunities to expand my skills and step outside of my comfort zone.
             </Content>
           </Text>
         </AboutSection>

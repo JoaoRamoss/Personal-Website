@@ -122,6 +122,7 @@ export const ContactTitle = styled.div`
     color: ${prop => color.highlight};
     font-weight: 600;
     font-size: 2.1rem;
+    margin-bottom: 3rem;
     @media (max-width: 660px) {
         font-size: 1.5rem;
         align-self: flex-start;
