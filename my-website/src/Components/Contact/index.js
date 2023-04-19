@@ -53,10 +53,10 @@ const Contact = () => {
         <AlternativeContainer>
           <Alternative>Alternatively, you can reach me via Email:</Alternative>
           <EmailShowcase>
-            <CopyToClipboard text="jprmsilva05@gmail.com" onCopy={()=>setCopied(true)}>
+            <CopyToClipboard text="joao.rmsilva05@gmail.com" onCopy={()=>setCopied(true)}>
               <Display><EmailLogo/></Display> 
             </CopyToClipboard>
-            <EmailSug>jprmsilva05@gmail.com</EmailSug>
+            <EmailSug>joao.rmsilva05@gmail.com</EmailSug>
           </EmailShowcase>
           {copied && <CopyWarning>Copied to clipboard</CopyWarning>}
         </AlternativeContainer>
