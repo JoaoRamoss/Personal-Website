@@ -37,13 +37,16 @@ export const Home = styled.div`
 
 export const ProfilePic = styled.img`
     width: 20rem;
-    border-radius: 50%;
-    box-shadow: 0 0 0 4px ${prop => color.primaryText};
+    height: 20rem;
+    border-radius: 7%;
+    box-shadow: 0 0 .5rem .05rem ${prop => color.primaryText};
     @media (max-width: 1100px){
         width: 25vw;
+        height: 25vw;
     }
     @media (max-width: 855px){
         width: 18rem;
+        height: 18rem;
     }
 `
 
@@ -221,5 +224,5 @@ export const Display = styled.div`
     box-shadow: 0 0 1rem -.7rem ${prop => color.primaryText};
     width: 3.3rem;
     height: 3.3rem;
-    border-radius: 50%;
+    border-radius: 10%;
 `

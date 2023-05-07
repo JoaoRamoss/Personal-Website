@@ -22,6 +22,7 @@ export const Wrapper = styled.div`
 
 export const AboutSection = styled.div`
     display: flex;
+    flex-direction: row-reverse;
     margin: 10rem 5rem;
     gap: 5rem;
     align-items: center;

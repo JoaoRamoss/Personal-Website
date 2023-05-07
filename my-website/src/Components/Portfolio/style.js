@@ -186,3 +186,8 @@ export const Live = styled.a`
 export const LiveLogo = styled(ImShare)`
     scale: 1;
 `
+
+export const BoxTitleWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+`
