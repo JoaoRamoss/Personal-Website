@@ -87,15 +87,23 @@ export const Image = styled.img`
     @media(max-width: 1200px){
         height: 25vw;
         width: auto;
+        &.braguia{
+          height: 25vw; 
+          width: auto;
+        }
     }
     @media (max-width: 1005px) {
         width: 35rem;
         height: auto;
         align-self: center;
+        
     }
     @media (max-width: 935px) {
         width: 60vw;
         height: auto;
+    }
+    &.braguia {
+        height: 25rem;
     }
 `
 

@@ -5,8 +5,8 @@ import { Wrapper, Title, SubTitle, Content, Box, Image, Info, BoxTitle, Desc, Qu
 import ghost from '../../images/ghost.png'
 import ghlogo from '../../images/ghub.png'
 import eas from '../../images/eas.png'
-import fms from '../../images/fms.png'
 import login from '../../images/Login.png'
+import braguia from '../../images/braguia.gif'
 
 const Portfolio = () => {
   return (
@@ -16,6 +16,27 @@ const Portfolio = () => {
         <SubTitle>"The only way to do great work is to love what you do" <Quote>- Steve Jobs</Quote></SubTitle>
       </TitleSet>
       <Content>
+
+      <Box className="reverse">
+          <Image className="braguia" src={braguia}/>
+          <Info>
+            <BoxTitleWrapper>
+              <BoxTitle>BraGuia</BoxTitle>
+              <Tools>
+                <Tech>React Native</Tech>
+                <Tech>Javascript</Tech>
+                <Tech>REST API</Tech>
+              </Tools>
+            </BoxTitleWrapper>
+            <Desc>BraGuia is a user-friendly travel app that guides you around the city of Braga, no tour guide needed. 
+              It's packed with a variety of interesting trails, guiding users from point to point with clear, detailed descriptions about each unique spot.
+               This was a class project, developed alongside two of my classmates. </Desc>
+            
+            <Actions>
+              <Code href="https://github.com/JoaoRamoss/TDS-2" target="_blank">Code <GhLogo src={ghlogo}/></Code>
+            </Actions>
+          </Info>
+        </Box>
 
       <Box>
           <Image src={login}/>
@@ -75,23 +96,6 @@ const Portfolio = () => {
           </Info>
         </Box>
 
-        <Box className="reverse">
-          <Image src={fms}/>
-          <Info>
-            <BoxTitleWrapper>
-              <BoxTitle>Football matches simulator</BoxTitle>
-              <Tools>
-                <Tech>Java</Tech>
-              </Tools>
-            </BoxTitleWrapper>
-            <Desc>Project developed during the Object-Oriented Programming class. The program reads information 
-              about all the teams and players from a provided CSV file and simulates matches between them.</Desc>
-            
-            <Actions>
-              <Code href="https://github.com/JoaoRamoss/ProjetoPOO" target="_blank">Code <GhLogo src={ghlogo}/></Code>
-            </Actions>
-          </Info>
-        </Box>
       </Content>
     </Wrapper>
   )
