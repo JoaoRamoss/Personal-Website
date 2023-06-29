@@ -1,12 +1,27 @@
 import React from 'react'
 import { Wrapper, Title, SubTitle, Content, Box, Image, Info, BoxTitle, Desc, Quote,
-   TitleSet, Tech, Tools, Code, GhLogo, Actions, Live, LiveLogo, BoxTitleWrapper } from './style.js'
+   TitleSet, Tools, Code, GhLogo, Actions, Live, LiveLogo, BoxTitleWrapper, StackItems, Display, StackLogo } from './style.js'
 
 import ghost from '../../images/ghost.png'
 import ghlogo from '../../images/ghub.png'
 import eas from '../../images/eas.png'
 import login from '../../images/Login.png'
 import braguia from '../../images/braguia.gif'
+import react from '../../images/react.png'
+import javascript from '../../images/js.png'
+import rest from '../../images/rest-api-icon.png'
+import python from '../../images/python.png'
+import flask from '../../images/flask.png'
+import kubernetes from '../../images/kubernetes.png'
+import ansible from '../../images/Ansible_Logo.png'
+import gc from '../../images/google-cloud.png'
+import html from '../../images/html.png'
+import css from '../../images/css.png'
+
+import { Tooltip } from 'react-tooltip'
+import 'react-tooltip/dist/react-tooltip.css'
+
+
 
 const Portfolio = () => {
   return (
@@ -23,9 +38,19 @@ const Portfolio = () => {
             <BoxTitleWrapper>
               <BoxTitle>BraGuia</BoxTitle>
               <Tools>
-                <Tech>React Native</Tech>
-                <Tech>Javascript</Tech>
-                <Tech>REST API</Tech>
+                <StackItems>
+                  <Tooltip id="my-tooltip"/>
+                  <Display><StackLogo data-tooltip-id="my-tooltip" 
+                                  data-tooltip-content="React Native" 
+                                  data-tooltip-place="bottom" className="react" src={react} alt="react logo"/></Display>
+                  <Display><StackLogo data-tooltip-id="my-tooltip" 
+                                  data-tooltip-content="JavaScript" 
+                                  data-tooltip-place="bottom" className="js" src={javascript} alt="Javascript logo"/></Display>
+              
+              <Display><StackLogo data-tooltip-id="my-tooltip" 
+                                  data-tooltip-content="REST API" 
+                                  data-tooltip-place="bottom" className="rest" src={rest} alt="REST API logo"/></Display>
+                </StackItems>
               </Tools>
             </BoxTitleWrapper>
             <Desc>BraGuia is a user-friendly travel app that guides you around the city of Braga, no tour guide needed. 
@@ -44,9 +69,19 @@ const Portfolio = () => {
             <BoxTitleWrapper>
               <BoxTitle>RasBet</BoxTitle>
               <Tools>
-                <Tech>React</Tech>
-                <Tech>Python</Tech>
-                <Tech>Flask</Tech>
+              <StackItems>
+                  <Tooltip id="my-tooltip"/>
+                  <Display><StackLogo data-tooltip-id="my-tooltip" 
+                                  data-tooltip-content="React Native" 
+                                  data-tooltip-place="bottom" className="react" src={react} alt="react logo"/></Display>
+                  <Display><StackLogo data-tooltip-id="my-tooltip" 
+                                  data-tooltip-content="Python" 
+                                  data-tooltip-place="bottom" className="python" src={python} alt="Python logo"/></Display>
+              
+                  <Display><StackLogo data-tooltip-id="my-tooltip" 
+                                  data-tooltip-content="Flask" 
+                                  data-tooltip-place="bottom" className="flask" src={flask} alt="Flask logo"/></Display>
+                </StackItems>
               </Tools>
             </BoxTitleWrapper>
             <Desc>RasBet is a website that alows it's users to place bets on football matches. 
@@ -65,9 +100,19 @@ const Portfolio = () => {
             <BoxTitleWrapper>
               <BoxTitle>Ghost</BoxTitle>
               <Tools>
-                <Tech>Ansible</Tech>
-                <Tech>Kubernetes</Tech>
-                <Tech>Google Cloud</Tech>
+              <StackItems>
+                  <Tooltip id="my-tooltip"/>
+                  <Display><StackLogo data-tooltip-id="my-tooltip" 
+                                  data-tooltip-content="Ansible" 
+                                  data-tooltip-place="bottom" className="ansible" src={ansible} alt="Ansible logo"/></Display>
+                  <Display><StackLogo data-tooltip-id="my-tooltip" 
+                                  data-tooltip-content="Kubernetes" 
+                                  data-tooltip-place="bottom" className="kubernetes" src={kubernetes} alt="Kubernetes logo"/></Display>
+              
+                  <Display><StackLogo data-tooltip-id="my-tooltip" 
+                                  data-tooltip-content="Google Cloud" 
+                                  data-tooltip-place="bottom" className="gc" src={gc} alt="Google Cloud logo"/></Display>
+                </StackItems>
               </Tools>
             </BoxTitleWrapper>
             <Desc>Automatization of the Ghost app's deployment and monitoring</Desc>
@@ -83,9 +128,19 @@ const Portfolio = () => {
             <BoxTitleWrapper>
               <BoxTitle>Etch-a-sketch</BoxTitle>
               <Tools>
-                <Tech>JavaScript</Tech>
-                <Tech>HTML</Tech>
-                <Tech>CSS</Tech>
+              <StackItems>
+                  <Tooltip id="my-tooltip"/>
+                  <Display><StackLogo data-tooltip-id="my-tooltip" 
+                                  data-tooltip-content="JavaScript" 
+                                  data-tooltip-place="bottom" className="js" src={javascript} alt="Javascript logo"/></Display>
+                  <Display><StackLogo data-tooltip-id="my-tooltip" 
+                                  data-tooltip-content="HTML" 
+                                  data-tooltip-place="bottom" className="html" src={html} alt="HTML logo"/></Display>
+              
+                  <Display><StackLogo data-tooltip-id="my-tooltip" 
+                                  data-tooltip-content="CSS" 
+                                  data-tooltip-place="bottom" className="css" src={css} alt="CSS logo"/></Display>
+                </StackItems>
               </Tools>
             </BoxTitleWrapper>
             <Desc>Etch-a-sketch is an interactive page where you can draw on a canvas. The user can change the canvas' resolution to fit their needs.</Desc>

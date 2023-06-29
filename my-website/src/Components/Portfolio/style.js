@@ -199,3 +199,80 @@ export const BoxTitleWrapper = styled.div`
     display: flex;
     flex-direction: column;
 `
+
+export const StackItems = styled.div`
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+`
+
+export const Display = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 1rem -.7rem ${prop => color.primaryText};
+    width: 3.3rem;
+    height: 3.3rem;
+    border-radius: 10%;
+`
+
+export const StackLogo = styled.img`
+
+    
+    &.react{
+        height: 2.3rem;
+        width: auto;
+    }
+    &.js{
+        height: 1.9rem;
+        width: auto;
+    }
+
+    &.java{
+        height: 2.8rem;
+        width: auto;
+    }
+    &.python{
+        height: 2.2rem;
+        width: auto;
+    }
+    &.mysql{
+        height: 1.7rem;
+        width: auto;
+    }
+    &.c{
+        height: 2.6rem;
+        width: auto;
+    }
+    &.rest{
+        height: 1.9rem;
+        width: auto;
+    }
+    &.flask {
+        height: 2.1rem;
+        width: auto;
+    }
+
+    &.gc {
+        height: 2.1rem;
+        width: auto;
+    }
+    &.kubernetes{
+        height: 2.4rem;
+        width: auto;
+    }
+    &.ansible {
+        height: 2.7rem;
+        width: auto;
+    }
+    &.css {
+        height: 2.1rem;
+        width: auto;
+    }
+    &.html {
+        height: 2.1rem;
+        width: auto;
+    }
+`
