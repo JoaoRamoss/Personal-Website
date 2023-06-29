@@ -1,27 +1,31 @@
 {
   "files": {
     "main.css": "/Personal-Website/static/css/main.81603f69.css",
-    "main.js": "/Personal-Website/static/js/main.bed3cdaf.js",
+    "main.js": "/Personal-Website/static/js/main.794e1a15.js",
     "static/media/braguia.gif": "/Personal-Website/static/media/braguia.1c55fa4d9d6becc0634d.gif",
     "static/media/ghost.png": "/Personal-Website/static/media/ghost.e67349714c27e7ff4359.png",
     "static/media/profile.jpeg": "/Personal-Website/static/media/profile.53e80ee9a573fda2eb2c.jpeg",
     "static/media/react.png": "/Personal-Website/static/media/react.2f2532db663fd5ec5f95.png",
     "static/media/Login.png": "/Personal-Website/static/media/Login.b64fc18b6bcac61477ca.png",
+    "static/media/flask.png": "/Personal-Website/static/media/flask.1dfb0a77f9428d1882eb.png",
     "static/media/eas.png": "/Personal-Website/static/media/eas.62cce137b618e10df9ba.png",
     "static/media/java.png": "/Personal-Website/static/media/java.fdabd4e11f1235e4e8e0.png",
     "static/media/Joao_Silva.pdf": "/Personal-Website/static/media/Joao_Silva.cb04685ec109bf86917a.pdf",
     "static/media/laptop.jpeg": "/Personal-Website/static/media/laptop.206b636754e5c9677291.jpeg",
+    "static/media/css.png": "/Personal-Website/static/media/css.12ac81f3bc9ecd86180c.png",
+    "static/media/google-cloud.png": "/Personal-Website/static/media/google-cloud.24257c7d398ab8783468.png",
     "static/media/c.png": "/Personal-Website/static/media/c.83dfa097dfa94f707a41.png",
     "static/media/wave.png": "/Personal-Website/static/media/wave.1bae5fcfb51082b5c2b4.png",
     "static/media/mysql.png": "/Personal-Website/static/media/mysql.97dcf359dd133fed966c.png",
+    "static/media/kubernetes.png": "/Personal-Website/static/media/kubernetes.f568a0a722cbf5db0d70.png",
     "static/media/linkedin.png": "/Personal-Website/static/media/linkedin.1a5b3f30074abb4430ab.png",
     "static/media/pointDown.png": "/Personal-Website/static/media/pointDown.f8f32c40fd7f75b5afe0.png",
     "index.html": "/Personal-Website/index.html",
     "main.81603f69.css.map": "/Personal-Website/static/css/main.81603f69.css.map",
-    "main.bed3cdaf.js.map": "/Personal-Website/static/js/main.bed3cdaf.js.map"
+    "main.794e1a15.js.map": "/Personal-Website/static/js/main.794e1a15.js.map"
   },
   "entrypoints": [
     "static/css/main.81603f69.css",
-    "static/js/main.bed3cdaf.js"
+    "static/js/main.794e1a15.js"
   ]
 }
