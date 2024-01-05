@@ -37,7 +37,7 @@ const HomeComp = () => {
       <Home>
         <div>
           <WelcomeMessage>Hi<Wave src={wave}/><br/> I'm João</WelcomeMessage>
-          <UnderText>Software Engineering Student at Universidade do Minho <br/>based in Fafe, Portugal 📍</UnderText>
+          <UnderText>Software Engineer<br/>based in Fafe, Portugal 📍</UnderText>
           <Links>
             <Redirect href="https://www.linkedin.com/in/joaosilva05/" target="_blank" rel="noreferrer">
               <LiLogo src={lkdin} alt="LinkedIn Logo"/>
